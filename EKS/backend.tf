@@ -3,7 +3,7 @@ terraform {
     bucket         = "bond0077"
     
     region         = "ap-south-1"
-    encrypt        = true
+    encrypt        = false
     dynamodb_table = "eks-terraform-lock"
   }
 }

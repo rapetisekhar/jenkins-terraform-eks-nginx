@@ -8,8 +8,8 @@ pipeline {
         stage('Checkout SCM'){
             steps{
                 script{
-                    checkout scmGit(branches: [[name: '*/master']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/Sayantan2k24/jenkins-terraform-eks-nginx.git']])
-                }
+                    checkout scmGit(branches: [[name: '*/master']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/rapetisekhar/jenkins-terraform-eks-nginx.git']])
+               }
             }
         }
         stage('Initializing Terraform'){
